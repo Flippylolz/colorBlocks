@@ -2,7 +2,7 @@
     {
         $('.dhead').on('click', function()
         {
-            $(this).closest('.color-block').children().last().slideToggle("slow");
+            $(this).closest('.color-block').find('.slider').slideToggle("slow");
         });
         $('.getPrice').on('click', function(){
             var price = $(this).closest('.color-block').find('.slider').data('price');
@@ -14,6 +14,9 @@
             }
             else if ( amount >= 3 ) {
                 totalPrice = price * amount * 0.7;
+            }
+            else if ( amount >= 1 ) {
+                totalPrice = price * amount;
             }
             else if ( amount == 0 ) {
                 totalPrice = price;
