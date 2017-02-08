@@ -20,7 +20,8 @@
             };
             var message = $('<br>Это будет стоить ' + totalPrice.toFixed(2) + '₴</br>');
             $(this).closest('.slider').append(message);
+            $(this).prev().prev().remove();
+            $(this).prev().remove();
             $(this).remove();
-            $(this).prev().remove();//не работает
         });
     });
