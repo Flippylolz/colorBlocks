@@ -16,11 +16,7 @@
             var price = $(this).closest('.color-block').find('.slider').data('price');
             var amount = $(this).closest('.color-block').find('#amount').val();
             var totalPrice = getPrice(price, amount);
-            var message = $('<br>Это будет стоить ' + totalPrice.toFixed(2) + '₴</br>');
-            $(this).closest('.slider').append(message);
-            $(this).prev().prev().remove();
-            $(this).prev().remove();
-            $(this).remove();
+            $(this).text(totalPrice.toFixed(2) + '₴');
         });
     });
 
