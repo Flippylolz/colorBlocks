@@ -13,7 +13,7 @@
 }
 .color-block {
     float: left;
-    height: 265px;
+    height: 270px;
     width: 225px;
     margin: 10px;
     border: solid 1px black;
@@ -28,7 +28,7 @@
 .slider {
     text-align: left;
     display: none;
-    height: 245px;
+    height: 250px;
     width: 225px;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
